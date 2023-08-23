@@ -10,9 +10,20 @@ POD_OPTIONS_TEMPLATE = \
 	--publish 5173:5173 \
 	node:alpine
 
-dev: CONTAINER_TAG = dev
-dev:
-	podman run $(POD_OPTIONS_TEMPLATE) npm run dev -- --host
+dev: SCRIPT = dev -- --host
+dev: run
+
+test: SCRIPT = test
+test:
+	$(error doesn't actually work. you didn't set it up)
+
+build: SCRIPT = build
+build: run
+
+run: CONTAINER_TAG = $(firstword $(SCRIPT))
+run:
+	podman run $(POD_OPTIONS_TEMPLATE) npm run $(SCRIPT)
+
 
 sh: CONTAINER_TAG = sh
 sh:
