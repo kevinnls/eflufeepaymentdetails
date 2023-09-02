@@ -1,3 +1,12 @@
+<script>
+	function share(){
+		const data = {
+			text: 'hello world',
+		}
+		navigator.share(data)
+	}
+</script>
+
 <p>
 This will be populated&hellip; sometime
 </p>
@@ -8,3 +17,5 @@ This will be populated&hellip; sometime
 		<td>N</td>
 	</tr>
 </table>
+
+<button on:click={share}>Send mail</button>
