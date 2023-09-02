@@ -13,7 +13,7 @@ POD_OPTIONS_TEMPLATE = \
 	node:alpine
 
 dev: EXTRA_FLAGS = --publish 5173:5173
-dev: SCRIPT = dev -- --host
+dev: SCRIPT = dev -- --host --https
 dev: run
 
 format:
