@@ -1,17 +1,23 @@
 PROJ = eflufeedeets
 
+POD_MOUNTS = \
+	-w /app \
+	-v $(PWD):/app:z \
+	-v $(PROJ)_modules:/app/node_modules:z
+
 POD_OPTIONS_TEMPLATE = \
 	--interactive --tty \
 	--rm \
 	--name $(PROJ)_$(CONTAINER_TAG) \
-	-w /app \
-	-v $(PWD):/app:z \
-	-v $(PROJ)_modules:/app/node_modules:z \
-	--publish 5173:5173 \
+	$(POD_MOUNTS) $(EXTRA_FLAGS) \
 	node:alpine
 
+dev: EXTRA_FLAGS = --publish 5173:5173
 dev: SCRIPT = dev -- --host
 dev: run
+
+format:
+	podman exec --interactive --tty $(PROJ)_dev npm run format
 
 test: SCRIPT = test
 test:
