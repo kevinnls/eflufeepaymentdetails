@@ -3,7 +3,7 @@
 	import { consts } from '../const';
 </script>
 
-<header class="grid grid-flow-col justify-between px-4 py-2">
+<header class="grid grid-flow-col justify-between items-center px-4 py-2">
 	<h1>{consts.app.name}</h1>
 	<nav class="w-max">
 		<ul class="grid grid-flow-col space-x-4">
