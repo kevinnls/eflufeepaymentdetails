@@ -18,6 +18,6 @@
 	<slot />
 </main>
 
-<footer>
+<footer class="px-4 py-2">
 	<p>&copy; Kevin Samuel, McKenzie Joseph, 2023</p>
 </footer>
