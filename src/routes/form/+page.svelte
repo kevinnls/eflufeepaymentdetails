@@ -25,8 +25,8 @@
 		<option value="9">Sem IX</option>
 		<option value="10">Sem X</option>
 	</select>
-	<label for="role">Roll No</label>
-	<input type = "text" id = "role" name = "role">
+	<label for="roll">Roll No</label>
+	<input type = "text" id = "roll" name = "roll">
 	<label for="category">Category</label>
 	<select id="category">
 		<option value="1">General</option>
@@ -47,16 +47,16 @@
 	<label for="acc-holder">Name of the account holder</label>
 	<input type="text" id="acc-holder" name="acc-holder">
 	<label for="acc-no">Account No</label>
-	<input type="number" id="acc-no" name="acc-no">
+	<input type="text" inputmode = "numeric" id="acc-no" name="acc-no">
 	<label for="bank">Name of the bank</label>
 	<input type="text" id="bank" name="bank">
 	<label for="branch">Branch</label>
 	<input type="text" id="branch" name="branch">
 
 	<label for="ifsc">IFSC code</label>
-	<input type="number" id="ifsc" name="ifsc">
+	<input type="text" id="ifsc" name="ifsc">
 	<label for="paid-amt">Amount paid</label>
-	<input type="number" id="paid-amt" name="paid-amt">
+	<input type="text" inputmode = "numeric" id="paid-amt" name="paid-amt">
 	<label for="pay-date">Date of Payment</label>
 	<input type="date" id="pay-date" name="bank">
 	<label for="mode">Payment Mode</label>
@@ -67,18 +67,18 @@
 		<option value="4">Credit card</option>
 	</select>
 	<label for="transaction-no">Transaction Number</label>
-	<input type="number" id="transaction-no" name="transaction-no">
+	<input type="text" inputmode = "numeric" id="transaction-no" name="transaction-no">
 	<label for="reference-no">Reference Number</label>
-	<input type="number" id="reference-no" name="reference-no">
+	<input type="text" id="reference-no" name="reference-no">
 	<label for="utr">UTR Number</label>
-	<input type="number" id="utr" name="utr">
+	<input type="text" inputmode = "numeric" id="utr" name="utr">
 	<label for="inb">INB Reference Number (for transfer from SBI to SBI)</label>
-	<input type="number" id="inb" name="inb">
+	<input type="text" id="inb" name="inb">
 
 	<strong>Details of the fees payment</strong>
 	<br>
 
-	<ol type = "a">
+	<ol type="a">
 		<li>A scanned copy of the receipt/counterfoil</li>
 		<li>Screenshot of the message regarding payment of fees</li>
 	</ol>
