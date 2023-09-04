@@ -3,7 +3,7 @@
 	function share(){
 		console.log(tableEle)
 		const tableBlob = new Blob([tableEle], {type:'text/plain'})
-		const tableFile = new File([tableBlob], 'messagebody.html')
+		const tableFile = new File([tableBlob], 'messagebody.txt', {type: tableBlob.type})
 		console.log(tableFile)
 		const data = {
 			files: [
