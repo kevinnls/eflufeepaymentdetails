@@ -5,7 +5,7 @@
 	<input type="text" id="name" name="name" />
 
 	<label for="programme">Pick your programme</label>
-	<select id="programme">
+	<select id="programme" name="programme">
 		<option value="ug">UG Undergraduate</option>
 		<option value="pg">PG Postgraduate</option>
 		<option value="phd">PhD Doctorate</option>
@@ -67,7 +67,7 @@
 	<input type="date" id="pay-date" name="bank" />
 
 	<label for="mode">Payment Mode</label>
-	<select id="mode">
+	<select id="mode" name="mode">
 		<option value="neft">NEFT</option>
 		<option value="sbi">SBI to SBI</option>
 		<option value="deb">Debit card</option>
