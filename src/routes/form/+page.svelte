@@ -29,14 +29,14 @@
 	<input type = "text" id = "roll" name = "roll">
 	<label for="category">Category</label>
 	<select id="category">
-		<option value="1">General</option>
-		<option value="2">EWS</option>
-		<option value="3">OBC</option>
-		<option value="4">WDP</option>
-		<option value="5">SC</option>
-		<option value="6">ST</option>
-		<option value="7">VHC</option>
-		<option value="8">PHC</option>
+		<option value="gen">General</option>
+		<option value="ews">EWS</option>
+		<option value="obc">OBC</option>
+		<option value="wdp">WDP</option>
+		<option value="sc">SC</option>
+		<option value="st">ST</option>
+		<option value="vhc">VHC</option>
+		<option value="phc">PHC</option>
 	</select>
 	<label for="phone">Phone No</label>
 	<input type = "tel" id = "phone" name = "phone">
@@ -61,17 +61,17 @@
 	<input type="date" id="pay-date" name="bank">
 	<label for="mode">Payment Mode</label>
 	<select id="mode">
-		<option value="1">NEFT</option>
-		<option value="2">SBI to SBI</option>
-		<option value="3">Debit card</option>
-		<option value="4">Credit card</option>
+		<option value="neft">NEFT</option>
+		<option value="sbi">SBI to SBI</option>
+		<option value="deb">Debit card</option>
+		<option value="cre">Credit card</option>
 	</select>
 	<label for="transaction-no">Transaction Number</label>
-	<input type="text" inputmode = "numeric" id="transaction-no" name="transaction-no">
+	<input type="text" id="transaction-no" name="transaction-no">
 	<label for="reference-no">Reference Number</label>
 	<input type="text" id="reference-no" name="reference-no">
 	<label for="utr">UTR Number</label>
-	<input type="text" inputmode = "numeric" id="utr" name="utr">
+	<input type="text" id="utr" name="utr">
 	<label for="inb">INB Reference Number (for transfer from SBI to SBI)</label>
 	<input type="text" id="inb" name="inb">
 
