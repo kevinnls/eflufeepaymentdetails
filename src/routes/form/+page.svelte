@@ -43,8 +43,7 @@
 	<label for="phone">Phone No</label>
 	<input type="tel" id="phone" name="phone" />
 
-	<strong>Details of the fees payment</strong>
-	<br />
+	<strong class="col-span-2">Details of the fees payment</strong>
 
 	<label for="acc-holder">Name of the account holder</label>
 	<input type="text" id="acc-holder" name="acc-holder" />
@@ -87,8 +86,7 @@
 	<label for="inb">INB Reference Number (for transfer from SBI to SBI)</label>
 	<input type="text" id="inb" name="inb" />
 
-	<strong>Details of the fees payment</strong>
-	<br />
+	<strong class="col-span-2">Details of the fees payment</strong>
 
 	<ol>
 		<li>A scanned copy of the receipt/counterfoil</li>
