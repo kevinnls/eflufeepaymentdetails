@@ -1,0 +1,33 @@
+---
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>
+					{%if title%}
+						{{title | append: " | " | append: site.name}}
+					{%else%}
+						{{site.name}}
+					{%endif%}
+		</title>
+		<meta name="description" content="{{site.desc}}">
+		<link rel="stylesheet" href="/static/pico.min.css">
+	</head>
+	<body>
+		<header>
+			<h1><a href="/">{{site.name}}</a></h1>
+			<nav>
+				<ul>
+					<li><a href="/feepaymail">Fee Payment Mail</a></li>
+					<li><a href="/about">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		{{-content-}}
+		</main>
+		<footer></footer>
+	</body>
+</html>
