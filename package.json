@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "eleventy --serve"
+		"dev": "eleventy --serve",
+		"build": "eleventy"
 	},
 	"type": "module",
 	"devDependencies": {
