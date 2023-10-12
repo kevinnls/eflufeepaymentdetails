@@ -12,8 +12,8 @@ POD_OPTIONS_TEMPLATE = \
 	$(POD_MOUNTS) $(EXTRA_FLAGS) \
 	node:alpine
 
-dev: EXTRA_FLAGS = --publish 5173:5173
-dev: SCRIPT = dev -- --host
+dev: EXTRA_FLAGS = --publish 8080:8080
+dev: SCRIPT = dev
 dev: run
 
 format:

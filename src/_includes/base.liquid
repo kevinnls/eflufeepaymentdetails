@@ -1,0 +1,36 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>
+					{%if title%}
+						{{title | append: " | " | append: site.name}}
+					{%else%}
+						{{site.name}}
+					{%endif%}
+		</title>
+		<meta name="description" content="{{site.desc}}">
+		<link rel="stylesheet" href="/static/pico.min.css">
+		<link rel="stylesheet" href="/static/site.css">
+	</head>
+	<body>
+		<header class="container">
+			<nav>
+				<ul><li><h1><a href="/">{{site.name}}</a></h1></li></ul>
+				{% renderFile './src/_includes/navlist.md' %}
+			</nav>
+		</header>
+		<main class="container">
+		{{-content-}}
+		</main>
+		<footer class="container">
+			<h1>{{site.name}}</h1>
+			<p>/ ˈreɪnˌboʊ krəˈsɑnt /</p>
+			<p>{{site.desc}}</p>
+		</footer>
+	</body>
+</html>
