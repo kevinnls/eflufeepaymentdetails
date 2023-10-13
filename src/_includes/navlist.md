@@ -1,3 +1,3 @@
 
-- [Services](/services)
-- [Quick](/quick)
+- [Tools](/tools)
+- [Links](/links)
