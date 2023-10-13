@@ -14,7 +14,7 @@ little easier in this uni&hellip; maybe&hellip;
 </header>
 
 
-- [Fee Payment Email Format](/services/feemailformat)
+- [Fee Payment Email Format](./feemailformat)
 
 <big class="container">MORE COMING SOON&hellip;</big>
 <p>&hellip;someone has to make them and they are lazy</p>
