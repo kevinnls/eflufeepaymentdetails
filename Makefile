@@ -3,6 +3,8 @@ PROJ = eflufeedeets
 POD_MOUNTS = \
 	-w /app \
 	-v $(PWD):/app:z \
+	-v pnpm-store:/usr/local/share/pnpm:Z \
+	-v pnpm-global:/usr/local/:Z \
 	-v $(PROJ)_modules:/app/node_modules:z
 
 POD_OPTIONS_TEMPLATE = \
@@ -17,7 +19,7 @@ dev: SCRIPT = dev
 dev: run
 
 format:
-	podman exec --interactive --tty $(PROJ)_dev npm run format
+	podman exec --interactive --tty $(PROJ)_dev pnpm run format
 
 test: SCRIPT = test
 test:
@@ -28,7 +30,7 @@ build: run
 
 run: CONTAINER_TAG = $(firstword $(SCRIPT))
 run:
-	podman run $(POD_OPTIONS_TEMPLATE) npm run $(SCRIPT)
+	podman run $(POD_OPTIONS_TEMPLATE) pnpm run $(SCRIPT)
 
 
 sh: CONTAINER_TAG = sh
