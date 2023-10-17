@@ -1,6 +1,8 @@
 ---
 layout: base
 title: quick links
+desc: >
+    links to pages related to the EFL University
 ---
 
 <article>

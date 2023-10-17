@@ -1,6 +1,10 @@
 ---
 layout: base.liquid
-title: services
+title: tools
+desc: >
+    a collection of tools to make life a
+    little easier in the EFL University
+
 ---
 
 <article>

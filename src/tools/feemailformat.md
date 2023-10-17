@@ -1,7 +1,9 @@
 ---
 layout: base
 title: Fee Mail Format
-desc: copiable format for mail to confirm fee payment details
+desc: >
+    copiable format for mail to COE Office confirming fee payment
+    details at the EFL University
 ---
 
 <header class="center">
