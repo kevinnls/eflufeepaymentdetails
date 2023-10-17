@@ -1,8 +1,9 @@
-PROJ = eflufeedeets
+PROJ = rainbowcroissant
 
 POD_MOUNTS = \
 	-w /app \
 	-v $(PWD):/app:z \
+	-v pnpm-config:/root/.config/pnpm:Z \
 	-v pnpm-store:/usr/local/share/pnpm:Z \
 	-v pnpm-global:/usr/local/:Z \
 	-v $(PROJ)_modules:/app/node_modules:z
