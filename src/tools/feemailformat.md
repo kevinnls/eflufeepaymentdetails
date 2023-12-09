@@ -27,4 +27,4 @@ desc: >
 		</div>
 </header>
 
-<iframe src="./plainformat" width="100%" height="200px"></iframe>
+<iframe src="./plainformat" width="100%" height="600px"></iframe>
