@@ -14,9 +14,10 @@ desc: >
 <div>
 			<script type="module">
 				const btn = document.getElementById('copybtn');
+                const frame = document.querySelector('iframe').contentWindow;
 				btn.addEventListener("click", ()=> {
-					window.getSelection().selectAllChildren(document.querySelector('article'));
-					document.execCommand('copy');
+					frame.getSelection().selectAllChildren(frame.document.querySelector('table'));
+					frame.document.execCommand('copy');
 					btn.innerText = 'COPIED!';
 					btn.disabled = true;
                     setTimeout(()=>{btn.disabled = false; btn.innerText = 'COPY'},3000)
