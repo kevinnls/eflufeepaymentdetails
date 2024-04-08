@@ -19,6 +19,7 @@ little easier in this uni&hellip; maybe&hellip;
 
 
 - [Fee Payment Email Format](./feemailformat)
+- [Course List Email Format](./coursemailformat)
 
 <big class="container">MORE COMING SOON&hellip;</big>
 <p>&hellip;someone has to make them and they are lazy</p>
